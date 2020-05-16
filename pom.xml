@@ -40,7 +40,7 @@
         <repository>
             <id>atlassian</id>
             <name>Atlassian public repo</name>
-            <url>https://packages.atlassian.com/maven/public</url>
+            <url>https://packages.atlassian.com/maven</url>
         </repository>
     </repositories>
     <dependencies>
