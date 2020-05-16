@@ -1,0 +1,1 @@
+[@s.textfield name="task.condition.username" labelKey="task.condition.username" template='userPicker' multiSelect=false /]

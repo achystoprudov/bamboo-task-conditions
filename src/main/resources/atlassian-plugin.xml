@@ -1,0 +1,22 @@
+<atlassian-plugin key="${project.groupId}.${project.artifactId}" name="${project.name}" plugins-version="2">
+
+    <plugin-info>
+        <description>${project.description}</description>
+        <version>${project.version}</version>
+        <vendor name="${project.organization.name}" url="${project.organization.url}"/>
+        <param name="plugin-icon">images/semaphore-128.png</param>
+        <param name="plugin-logo">images/semaphore-128.png</param>
+        <param name="vendor-logo">images/atlassian.png</param>
+        <param name="vendor-icon">images/atlassian.png</param>
+        <bundle-instructions>
+            <Export-Package>com.atlassian.bamboo.plugins.task_conditions.*</Export-Package>
+        </bundle-instructions>
+    </plugin-info>
+
+    <taskCondition key="userCondition" class="com.atlassian.bamboo.plugins.task_conditions.user.UserCondition" name="Username">
+        <description>Provides option to choose user name for conditional tasks</description>
+        <resource type="freemarker" name="edit" location="ftl/user.ftl"/>
+    </taskCondition>
+
+    <resource type="i18n" name="i18n" location="com.atlassian.bamboo.plugins.conditionaltask.i18n"/>
+</atlassian-plugin>
