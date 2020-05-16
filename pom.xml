@@ -36,6 +36,18 @@
         <commons.httpclient4-core.version>4.4.4</commons.httpclient4-core.version>
         <commons.httpclient4.version>4.3.6</commons.httpclient4.version>
     </properties>
+    <distributionManagement>
+        <repository>
+            <id>maven-atlassian-com</id>
+            <name>Atlassian Central Repository</name>
+            <url>https://packages.atlassian.com/maven/central</url>
+        </repository>
+        <snapshotRepository>
+            <id>maven-atlassian-com</id>
+            <name>Atlassian Central Snapshot Repository</name>
+            <url>https://packages.atlassian.com/maven/central-snapshot</url>
+        </snapshotRepository>
+    </distributionManagement>
     <dependencies>
         <dependency>
             <groupId>com.atlassian.bamboo</groupId>
@@ -208,4 +220,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>
